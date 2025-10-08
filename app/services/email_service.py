@@ -207,6 +207,15 @@ class EmailService:
                     <p>To reset your password, click the button below:</p>
                     <a href="{reset_url}" class="button">Reset Password</a>
                     
+                    <p><strong>For testing purposes, your reset token is:</strong></p>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; font-family: monospace; word-break: break-all;">
+                        {reset_token}
+                    </div>
+                    <p><strong>Reset URL:</strong></p>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; font-family: monospace; word-break: break-all;">
+                        {reset_url}
+                    </div>
+                    
                     <p><strong>Important:</strong></p>
                     <ul>
                         <li>This link expires in 1 hour</li>
@@ -237,6 +246,8 @@ class EmailService:
         Security Notice: If you didn't request this password reset, please ignore this email. Your account remains secure.
         
         To reset your password, visit: {reset_url}
+        
+        For testing purposes, your reset token is: {reset_token}
         
         Important:
         - This link expires in 1 hour
