@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     SMTP_SSL: bool = False
     FROM_EMAIL: str = "noreply@bhashini.gov.in"
     FROM_NAME: str = "Bhashini Platform"
-    FRONTEND_URL: str = "https://your-frontend-domain.com"
+    FRONTEND_URL: str = "http://localhost:3000"  # Update this to your actual frontend URL
     
     # App settings
     APP_NAME: str = "Bhashini Login API"
